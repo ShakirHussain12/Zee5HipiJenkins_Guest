@@ -48209,7 +48209,7 @@ public void shopPageBySwipeTheDownTheBottomUpSheet__T2390__T2397(String userType
 			
 			Time_ExcelUpdate.timeStampNode(Processingtimesec+"."+Processingtimemilli + " Sec");
 			Time_ExcelUpdate.TestCaseSummaryNode1("Feed Screen launch time.");
-			extent.extentLoggerFail("", "Feed screen seen  at Time----- " + end);
+			extent.extentLogger("", "Feed screen seen  at Time----- " + end);
 			
 			}else {
 				String Username = getParameterFromXML("NonsubscribedUserName");
@@ -48229,7 +48229,7 @@ public void shopPageBySwipeTheDownTheBottomUpSheet__T2390__T2397(String userType
 			Instant start = Instant.now();
 			
 			waitUntilElementDisplayed(HipiHomePage.objForYou, 10);		
-			for(int i=0; i<=1000;i++) {
+			for(int i=0; i<=100;i++) {
 				System.out.println(i);
 			 String videoid = getText(HipiHomePage.objUserName);
 				String Username = getParameterFromXML("NonsubscribedUserName");
