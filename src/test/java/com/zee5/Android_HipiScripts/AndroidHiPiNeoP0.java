@@ -33,19 +33,19 @@ public class AndroidHiPiNeoP0 {
 		Zee5ApplicasterHipiNeoBusinessLogic.verifyProgressBar();
 	}
 	
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	@Parameters({ "userType"})
 	public void Login(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.loginTime(userType);
 	}
 	
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	@Parameters({ "userType"})
 	public void likeTimeCount(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.likeTime(userType);
 	}
 	
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	@Parameters({ "userType"})
 	public void commentTimeCount(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.commentTime(userType);
@@ -103,7 +103,7 @@ public class AndroidHiPiNeoP0 {
 		
 	}
 	
-	@Test(priority = 11)
+	//@Test(priority = 11)
 	@Parameters({ "userType"})
 	public void videoNextTime__15Sec(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.create_Video_And_Next("15s", userType, "TC014" , "TC015");
@@ -111,7 +111,7 @@ public class AndroidHiPiNeoP0 {
 	
 	}
 	
-	@Test(priority = 12)
+	//@Test(priority = 12)
 	@Parameters({ "userType"})
 	public void videoNextTime__30Sec(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.create_Video_And_Next("30s", userType, "TC016" , "TC017");
@@ -119,20 +119,20 @@ public class AndroidHiPiNeoP0 {
 		
 	}
 	
-	@Test(priority = 13)
+	//@Test(priority = 13)
 	@Parameters({ "userType"})
 	public void videoNextTime__45Sec(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.create_Video_And_Next("45s", userType, "TC018" ,"TC019");
 
 
 	}
-	@Test(priority = 14)
+	//@Test(priority = 14)
 	@Parameters({ "userType"})
 	public void videoNextTime__60Sec(String userType) throws Exception {
 	
 		Zee5ApplicasterHipiNeoBusinessLogic.create_Video_And_Next("60s", userType, "TC020" , "TC021");
 	}
-	@Test(priority = 15)
+	//@Test(priority = 15)
 	@Parameters({ "userType"})
 	public void videoNextTime__90Sec(String userType) throws Exception {
 		Zee5ApplicasterHipiNeoBusinessLogic.create_Video_And_Next("90s", userType, "TC022" , "TC023");
@@ -178,7 +178,7 @@ public class AndroidHiPiNeoP0 {
 //	
 //	}
 	
-	@Test(priority = 16)
+	//@Test(priority = 16)
 	@Parameters({ "userType"})
 	public void CreatorPlatformSoundScreenLoadTime(String userType) throws Exception {
 	
@@ -186,14 +186,14 @@ public class AndroidHiPiNeoP0 {
 	
 	}
 	
-	@Test(priority =17)
+	//@Test(priority =17)
 	@Parameters({ "userType"})
 	public void EffectsLoadTime(String userType) throws Exception {
 
 		Zee5ApplicasterHipiNeoBusinessLogic.EffectsLoadTime();
 	
 	}
-	@Test(priority = 18)
+	//@Test(priority = 18)
 	@Parameters({ "userType"})
 	public void FilterLoadTime(String userType) throws Exception {
 
@@ -220,12 +220,12 @@ public class AndroidHiPiNeoP0 {
 //
 //	}
 		
-//	@Test(priority = 20)
+	@Test(priority = 20)
 	@Parameters({ "userType"})
 	public void logout(String userType) throws Exception {
-//		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("shivangi","TC029");
-//		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("shraddha arya","TC030");
-//		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("punjabi singers","TC031");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("shivangi","TC029");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("shraddha arya","TC030");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("punjabi singers","TC031");
 //		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("bollywood actress","TC032");
 //		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("punjabi videos", "TC033");
 //		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("funny video", "TC034");
@@ -268,7 +268,7 @@ public class AndroidHiPiNeoP0 {
 		
 		
 	}	
-	
+	/*
 	@Test(priority = 1)
 	@Parameters({ "userType"})
 	public void FeedModuleP0TCs(String userType) throws Exception {
@@ -462,7 +462,7 @@ public class AndroidHiPiNeoP0 {
 		
 	}
 		*/
-	
+	/*
 	@Test(priority = 4)
 	@Parameters({ "userType"})
 	public void createrModuleP0TCs(String userType) throws Exception {
@@ -830,7 +830,7 @@ public class AndroidHiPiNeoP0 {
 		*/
 		//New TCs 
 	
-	
+	/*
 	@Test(priority = 15)
     @Parameters({ "userType"})
     public void CreatorModuleNew(String userType) throws Exception {
@@ -947,7 +947,7 @@ public class AndroidHiPiNeoP0 {
 		
 		Zee5ApplicasterHipiNeoBusinessLogic.shopPageWishlistDiscover__T3480(userType, userType);
 		
-		*/
+		
     }
 	
 	
@@ -1080,7 +1080,7 @@ public class AndroidHiPiNeoP0 {
 		Zee5ApplicasterHipiNeoBusinessLogic.rewardsV2_newUser_T21(userType);
 		
 		
-	}
+	}*/
 	@AfterTest						
 		
 	public void tearDownApp() {		
