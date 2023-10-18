@@ -48218,6 +48218,8 @@ public void shopPageBySwipeTheDownTheBottomUpSheet__T2390__T2397(String userType
 				extent.extentLoggerFail("", "Feed Screen is not dispalyed " + Username + getListOfDevicesConnected());
 			}
 		}
+		
+		
 		public void videoUIRepate(String userType) throws Exception {
 			Time_ExcelUpdate.TestCaseIDNode("TC039");
 //			Time_ExcelUpdate.SlNoNode("1");
@@ -48228,21 +48230,20 @@ public void shopPageBySwipeTheDownTheBottomUpSheet__T2390__T2397(String userType
 
 			Instant start = Instant.now();
 			
-			waitUntilElementDisplayed(HipiHomePage.objForYou, 10);		
+			TimeStampwaitForElementDisplayediOS(HipiHomePage.objForYou, 1000, "for you button in feed");		
 			for(int i=0; i<=100;i++) {
-				System.out.println(i);
-			 String videoid = getText(HipiHomePage.objUserName);
+			 String videoid = getText(HipiHomePage.objVideoUIID);
 				String Username = getParameterFromXML("NonsubscribedUserName");
 				creatCSV(videoid,Username,getListOfDevicesConnected());
 //				extent.extentLoggerPass("", videoid+","+Username+"," +getListOfDevicesConnected()+",");
 //				Time_ExcelUpdate.TestCaseSummaryNode1( videoid+","+Username+"," +getListOfDevicesConnected()+",");
 				
-//				waitTime(5000);
+				waitTime(5000);
 				TimeStampSwipe("UP", 1);
 				
 			}
-			
 		}
+
 		
 		public static String getListOfDevicesConnected() {
 			String deviceID = null;

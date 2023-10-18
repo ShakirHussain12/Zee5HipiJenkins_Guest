@@ -265,7 +265,7 @@ public class ExtentReporter implements ITestListener  {
 //	}
 	// mail extent reports
 				String[] to = { "prashantkumar.vairat@zee.com"};
-				String[] cc = {"shakir.muchumarri@igsindia.net","bindu.vm@igsindia.net","jwala.agrawal@zee.com","karthik.hs@igsindia.net","tejas.cb@igsindia.net"};
+				String[] cc = {"shakir.muchumarri@igsindia.net","bindu.vm@igsindia.net","jwala.agrawal@zee.com","karthik.hs@igsindia.net"};
 				String[] bcc = {};
 
 		@SuppressWarnings("static-access")
