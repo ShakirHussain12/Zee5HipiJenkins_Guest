@@ -48209,13 +48209,13 @@ public void shopPageBySwipeTheDownTheBottomUpSheet__T2390__T2397(String userType
 			
 			Time_ExcelUpdate.timeStampNode(Processingtimesec+"."+Processingtimemilli + " Sec");
 			Time_ExcelUpdate.TestCaseSummaryNode1("Feed Screen launch time.");
-			extent.extentLogger("", "Feed screen seen  at Time----- " + end);
+			extent.extentLoggerFail("", "Feed screen seen  at Time----- " + end);
 			
 			}else {
 				String Username = getParameterFromXML("NonsubscribedUserName");
 				
 				Time_ExcelUpdate.TestCaseSummaryNode1("Feed Screen is not dispalyed " + Username + getListOfDevicesConnected());
-				extent.extentLogger("", "Feed Screen is not dispalyed " + Username + getListOfDevicesConnected());
+				extent.extentLoggerFail("", "Feed Screen is not dispalyed " + Username + getListOfDevicesConnected());
 			}
 		}
 		public void videoUIRepate(String userType) throws Exception {
