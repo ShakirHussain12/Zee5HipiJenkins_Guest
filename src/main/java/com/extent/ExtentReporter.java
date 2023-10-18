@@ -264,8 +264,8 @@ public class ExtentReporter implements ITestListener  {
 //		Time_ExcelUpdate.writeData1(details, "Fail", "");
 //	}
 	// mail extent reports
-				String[] to = { "kartheek.dn@igsindia.net" };
-				String[] cc = {};
+				String[] to = { "prashantkumar.vairat@zee.com"};
+				String[] cc = {"shakir.muchumarri@igsindia.net","bindu.vm@igsindia.net","jwala.agrawal@zee.com","karthik.hs@igsindia.net","tejas.cb@igsindia.net"};
 				String[] bcc = {};
 
 		@SuppressWarnings("static-access")
@@ -289,10 +289,10 @@ public class ExtentReporter implements ITestListener  {
 			screencapture();
 			ExcelUpdate.writeData("", "Fail", details);
 			Time_ExcelUpdate.writeData1(details, "Fail", "");
-//			MailReport mail=new MailReport();
-//			mail.sendMail("igsindiajenkins@gmail.com", "csoehouykebabvlc", "smtp.gmail.com", "587", "true", "true", true, "javax.net.ssl.SSLSocketFactory",
-//					"false", to, cc, bcc, "Hipi Android Automation Fail Alert",
-//					"TestCAse ID"," "+summarry );
+		MailReport mail=new MailReport();
+		mail.sendMail("igsindiajenkins@gmail.com", "csoehouykebabvlc", "smtp.gmail.com", "587", "true", "true", true, "javax.net.ssl.SSLSocketFactory",
+				"false", to, cc, bcc, "Hipi Android BrowserStack Automation(Guest User) Fail Alert",
+					"TestCase ID"," "+summarry );
 //			SearchScenarios_ExcelUpdate.writeData1(details, "Fail", "");
 		}
 	public void extentLoggerWarning(String stepName, String details) {
